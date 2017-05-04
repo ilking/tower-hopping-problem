@@ -4,37 +4,23 @@ using System.Text;
 
 namespace TowerHoppingProblem
 {
-  /* Class dedicated to tracking path through towers. Using a class in this way wasn't strictly necessary, 
-      but it made debugging much when my functions could pass back both their results and how the code arrived
-      at its conclusion. */
-  public class TowerPath
+  /** Given a list of integers representing towers of various heights, find out if its possible to escape the towers by jumping from one tower to another. 
+     * You can only jump as far as the height of the current tower.
+     */
+  public abstract class TowerBrain
   {
-    private readonly List<int> _steps;
-    private bool _result;
     public int[] Towers { get; protected set; }
     
-    public TowerPath(int[] towers)
+    public TowerBrain(int[] towers)
     {
-      _steps = new List<int>();
-      _steps.Add(0);
-      _result = false;
       Towers = towers;
     }
     
-    public void AddStep(int i)
-    {
-      _steps.Add(i);
-      if (i >= Towers.Length) this._result = true;
-    }
+    public abstract void Calculate();
     
     public override string ToString()
     {
-      StringBuilder sb = new StringBuilder();
-      sb.AppendLine(String.Format("Towers: [{0}]", String.Join(", ", this.Towers)));
-      sb.AppendLine(String.Format("{0} : {1}", this._result, String.Join(" -> ", this._steps)));
-      
-      return sb.ToString();
+      return String.Format("[{0}]", String.Join(", ", this.Towers));
     }
-    
   }
 }
