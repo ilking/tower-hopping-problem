@@ -8,3 +8,5 @@ Original Problem:
 > from index 0. Note that the jumper can only jump as far as the height of the tower he's currently standing on.
 
 For example, `IsHoppable([4, 2, 0, 0, 2, 0]) -> True` by using the path `0 -> 4 -> 6`. However, `IsHoppable([1,0]) -> False` because the jumper would start at index `0`, jump one tower to index `1`, and then be stuck because `Towers[1] = 0`.
+
+[Problem and solution originally found on YouTube](https://www.youtube.com/watch?v=kHWy5nEfRIQ)
