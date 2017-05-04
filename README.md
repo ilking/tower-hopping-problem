@@ -9,4 +9,4 @@ Original Problem:
 
 For example, `IsHoppable([4, 2, 0, 0, 2, 0]) -> True` by using the path `0 -> 4 -> 6`. However, `IsHoppable([1,0]) -> False` because the jumper would start at index `0`, jump one tower to index `1`, and then be stuck because `Towers[1] = 0`.
 
-[Problem and solution originally found on YouTube](https://www.youtube.com/watch?v=kHWy5nEfRIQ)
+[Problem and solution originally found on YouTube.](https://www.youtube.com/watch?v=kHWy5nEfRIQ) Note that the original problem only required that a boolean be returned, indicating whether a path exists. My implementation also returns the found path to make debugging simpler.
