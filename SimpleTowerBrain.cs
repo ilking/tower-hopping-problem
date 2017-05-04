@@ -73,10 +73,9 @@ namespace TowerHoppingProblem
     
     public override string ToString() {
       StringBuilder sb = new StringBuilder();
-      sb.AppendLine("Simple Solution:");
-      sb.AppendLine(String.Format("\tTowers: {0}", base.ToString()));
-      sb.AppendLine(String.Format("\tResult: {0}", this._simpleResult));
-      sb.AppendLine(String.Format("\tPath: {0}", String.Join(" -> ", this._steps)));
+      sb.AppendLine("Simple Results:");
+      sb.AppendLine(String.Format("Result: {0}", this._simpleResult));
+      sb.Append(String.Format("Path: {0}", String.Join(" -> ", this._steps)));
       
       return sb.ToString();
     }

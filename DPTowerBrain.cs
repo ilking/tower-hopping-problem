@@ -49,10 +49,9 @@ namespace TowerHoppingProblem
     public override string ToString()
     {
       StringBuilder sb = new StringBuilder();
-      sb.AppendLine("Dynamic Programming Solution:");
-      sb.AppendLine(String.Format("\tTowers: {0}", base.ToString()));
-      sb.AppendLine(String.Format("\tResults: {0}", this._dpResult));
-      sb.AppendLine(String.Format("\tFindings: [{0}]", String.Join(", ", this._dpFinds)));
+      sb.AppendLine("Dynamic Results:");
+      sb.AppendLine(String.Format("Results: {0}", this._dpResult));
+      sb.Append(String.Format("Findings: [{0}]", String.Join(", ", this._dpFinds)));
       
       return sb.ToString();
     }

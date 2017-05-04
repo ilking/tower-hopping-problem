@@ -17,10 +17,5 @@ namespace TowerHoppingProblem
     }
     
     public abstract void Calculate();
-    
-    public override string ToString()
-    {
-      return String.Format("[{0}]", String.Join(", ", this.Towers));
-    }
   }
 }
