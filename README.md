@@ -1,5 +1,5 @@
 # tower-hopping-problem
-C# implementation of the Simple Solution to the Tower Hopping Problem.
+C# implementation of the Tower Hopping Problem.
 
 Original Problem:
 
